@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Calculate me</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="utils.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1 class="text-center">Calculator</h1>
+    <style>
+      body {
+        text-align: 100px;
+        background-color: #010038;
+      }
+      h1 {
+        font-size: 3rem;
+        margin-top: 45vh;
+        color: rgb(2, 2, 2);
+        font-family: "Merienda", cursive;
+        animation-name: glow;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes glow {
+        from {
+          text-shadow: 0px 0px 5px rgb(244, 14, 14), 0px 0px 5px #d34a4a;
+        }
+        to {
+          text-shadow: 0px 0px 20px rgb(248, 15, 15), 0px 0px 20px #d34a4a;
+        }
+      }
+    </style>
+    <div class="container flex flex-col items-center mx-auto m-w-20">
+      <div class="row">
+        <input class="input" type="text" />
+      </div>
+      <div class="row">
+        <button style="color: white" class="button">C</button>
+        <button style="color: white" class="button">M+</button>
+        <button style="color: white" class="button">%</button>
+        <button style="color: white" class="button">M-</button>
+      </div>
+      <div class="row">
+        <button style="color: white" class="button">7</button>
+        <button style="color: white" class="button">8</button>
+        <button style="color: white" class="button">9</button>
+        <button style="color: white" class="button">*</button>
+      </div>
+      <div class="row">
+        <button style="color: white" class="button">4</button>
+        <button style="color: white" class="button">5</button>
+        <button style="color: white" class="button">6</button>
+        <button style="color: white" class="button">/</button>
+      </div>
+      <div class="row">
+        <button style="color: white" class="button">1</button>
+        <button style="color: white" class="button">2</button>
+        <button style="color: white" class="button">3</button>
+        <button style="color: white" class="button">+</button>
+      </div>
+      <div class="row">
+        <button style="color: white" class="button">0</button>
+        <button style="color: white" class="button">.</button>
+        <button style="color: white" class="button">=</button>
+        <button style="color: white" class="button">-</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
